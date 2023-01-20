@@ -1,0 +1,149 @@
+@charset "UTF-8";
+
+#corpo {
+    background-color: #83E1AD;
+    font-family: Arial, Helvetica, sans-serif;
+    margin: auto;
+}
+
+article {
+    text-indent: 30px;
+    padding: 3px;
+    box-shadow: 5px 3px 7px 1px rgba(0, 0, 0, 0.514);
+}
+
+.cabecalho {
+    text-align: center;
+    color: rgb(255, 255, 255);
+    margin-top: 0px;
+
+}
+
+.cabecalho p {
+    font-size: medium;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.painel {
+    
+   
+}
+
+nav {
+    padding: 3px;
+    box-shadow: 5px 3px 7px 1px rgba(0, 0, 0, 0.514);
+}
+
+nav a {
+    text-decoration: none;
+    color: white;
+    margin-right: 40px;
+    text-align: left;
+    margin-left: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+header {
+    background-image: linear-gradient(to bottom, #39cf7d, #299459, #063D1E);
+    background-attachment: scroll;
+    margin-top: 0px;
+    
+}
+
+article {
+    background-color: rgb(255, 255, 255);
+    margin: 0% 22% 10px 22%;
+    padding-top: 1px;
+    border-radius: 0px 0px 0px 0px;
+}
+
+article>h1 {
+    font-family: idroid;
+    color: #0a7739;
+    margin-left: 20px;
+}
+
+img {
+    display: block;
+    margin: auto;
+    width: 95%;
+}
+
+.bugdroid {
+    max-width: 300px;
+    max-height: 300px;
+    width: auto;
+    height: auto;
+    margin: auto;
+}
+
+.video {
+    background-color: #063D1E;
+    position: relative;
+    overflow: hidden;
+    padding-top: 56.25%;
+}
+
+
+aside>h1 {
+    background-color: #32b46c;
+    border-radius: 10px 10px 0px 0px;
+    color: rgb(255, 255, 255);
+    font-size: 15px;
+    margin: 10px 0px 0px 0px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+
+}
+
+.background {
+    background-color: rgb(255, 255, 255);
+    border-top: 0%;
+    margin: -4% 22% 0% 22%;
+    padding-top: 4%;
+    box-shadow: 5px 3px 7px 1px rgba(0, 0, 0, 0.514);
+
+}
+
+aside {
+    display: block;
+    margin: auto;
+    width: 95%;
+    margin-bottom: 100px;
+    border-radius: 0px 0px 10px 10px;
+}
+
+.final {
+    background-color: white;
+    margin: 0% 22% 10px 22%;
+    padding-top: 15px;
+    border-radius: 0px 0px 10px 10px;
+    margin-top: -100px;
+    text-indent: 30px;
+    padding-bottom: 30px;
+    padding: 20px 20px 40px 20px;
+    
+    box-shadow: 5px 3px 7px 1px rgba(0, 0, 0, 0.514);
+}
+
+.lista1 {
+    display: inline-block;
+    color: black;
+    margin: 0% 18% 0% 1%;
+    padding: 0%;
+    border: 0%;
+
+}
+
+.lista2 {
+    display: inline-block;
+    color: black;
+    text-align: left;
+    padding-left: 0%;
+}
+
+footer {
+    background-color: #063D1E;
+    text-align: center;
+    margin-top: 25px;
+    color: white;
+}
