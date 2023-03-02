@@ -4,20 +4,35 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=, initial-scale=1.0">
-    <title>Document</title>
+    <title>Fundo fixo de tela</title>
     <style>
         body {
+            
             height: 100vh;
+            /*
             background-color: black;
             background-image: url(imagens/wallpaper002.jpg);
             background-position: center top;
             background-repeat: no-repeat;
             background-size: cover;
+            background-attachment: fixed;
+            */
+            
+            /* Shorthand - background
+            color > image : position > repeat > [size]
+            attachment
+            O cover não funciona nessa sequência, ele tem que ser tirado e digitado o comando completo abaixo para poder funcionar, mas essa cronologia foi informada pelo W3School que é o jeito certo de ser feito.
+        */
+
+        background: black url('imagens/wallpaper002.jpg') center center no-repeat fixed;
+        background-size: cover;
         }
+        
+        
 
         main {
             background-color: white;
-            width: 400px;
+            max-width: 400px;
             padding: 10px;
             margin: auto;
             margin:  1px solid darkblue;
@@ -29,7 +44,7 @@
     <main>
         <h1> Teste de imagem de Fundo</h1>
             <p>
-                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Corrupti quo adipisci repudiandae repellat, corporis sunt suscipit ullam. Tempora, hic nemo, ratione provident incidunt vel rerum magnam tempore, commodi facere voluptates! Lorem ipsum, dolor sit amet consectetur adipisicing elit. Et, nemo unde. Quo, officia nemo. Porro cupiditate possimus nisi harum, tenetur asperiores excepturi, officia eum, et iste ducimus quod qui consequatur. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptas id enim temporibus! Laboriosam, minima. Aperiam velit sunt voluptatem nam assumenda aut doloremque tempore. Consequuntur dicta, veniam saepe perspiciatis recusandae facere.
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Corrupti quo adipisci repudiandae repellat, corporis sunt suscipit ullam. Tempora, hic nemo, ratione provident incidunt vel rerum magnam tempore, commodi facere voluptates! Lorem ipsum, dolor sit amet consectetur adipisicing elit. Et, nemo unde. Quo, officia nemo. Porro cupiditate possimus nisi harum, tenetur asperiores excepturi, officia eum, et iste ducimus quod qui consequatur. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptas id enim temporibus! Laboriosam, minima. Aperiam velit sunt voluptatem nam assumenda aut doloremque tempore. Consequuntur dicta, veniam saepe perspiciatis recusandae facere. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vero quod commodi eius similique accusamus quis ipsam reiciendis beatae quae, deleniti omnis ratione sapiente tenetur officiis veniam voluptas facilis tempore harum. Lorem ipsum dolor sit amet consectetur adipisicing elit. At eaque veniam consequatur expedita. Magnam, assumenda iste fugit ad iusto eveniet magni harum, illo, doloribus atque dolores blanditiis ea molestiae ipsam. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Placeat veritatis facere quisquam illum quibusdam debitis! Accusamus dolor, possimus tempore animi, iste sapiente eum ea accusantium error quidem est harum aspernatur! Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sint, incidunt soluta sed necessitatibus, autem labore impedit nobis cumque reprehenderit, praesentium corrupti minus? Tempore officiis magni sed incidunt eligendi nihil repellat? Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi at tempore enim vel, fuga illum aspernatur numquam dolorum cum. Mollitia error reprehenderit quos iusto at, deserunt esse quia numquam illum.
             </p>
         
     </main>
