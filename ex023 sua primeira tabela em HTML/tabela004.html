@@ -5,14 +5,70 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tabela com nomes</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            
+        }
+
+        table {
+            width: 600px;
+            height: 100px;
+            border-collapse: collapse;
+        }
+
+        td {
+            border: 2px solid black;
+            text-align: center;
+        }
+    </style>
 </head>
 <body>
     <h1>Tabelas com nomes</h1>
     <table>
-        <tr>
+        <tr style="font-weight: bolder;">
             <td>Grupo</td>
             <td>Nomes</td>
-            <td>Filmes</td>
+            <td colspan="3">Filmes</td>
+        </tr>
+        <tr>
+            <td rowspan="3" style="font-weight: bolder;">Mulheres</td>
+            <td>Ana Maria Santos</td>
+            <td>Alien</td>
+            <td>Rambo</td>
+            <td>Vingadores</td>
+            
+        </tr>
+        <tr>
+            <td>Beatriz Souza</td>
+            <td>Hulk</td>
+            <td>Inception</td>
+            <td>Batman</td>
+        </tr>
+        <tr>
+            <td>Cláudia Melo</td>
+            <td>Oblivion</td>
+            <td>Matrix</td>
+            <td>Big Hero</td>
+        </tr>
+        <tr>
+            <td rowspan="3" style="font-weight: bolder;">Homens</td>
+            <td>Bruno Mendonça</td>
+            <td>Intocáveis</td>
+            <td>Amnésia</td>
+            <td>Gladiador</td>
+        </tr>
+        <tr>
+            <td>Daniel Lourenço</td>
+            <td>Wall-E</td>
+            <td>Oldboy</td>
+            <td>Dangal</td>
+        </tr>
+        <tr>
+            <td>Fabiano Mota</td>
+            <td>Star Wars 5</td>
+            <td>Taxi Driver</td>
+            <td>Toy Story</td>
         </tr>
     </table>
     
