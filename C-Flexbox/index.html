@@ -1,0 +1,386 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexbox</title>
+    <style>
+        .container {
+            display: flex;
+            background-color: gray;
+
+        }
+
+        .containe {
+            display: flex;
+            background-color: gray;
+            height: 300px;
+            flex-direction: row;
+            justify-content: center;
+
+        }
+
+        .contain {
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+            flex-wrap: wrap;
+            align-content: center;
+            row-gap: 10px;
+            column-gap: 30px;
+
+            /* indiferente: */
+            background-color: #83794b;
+            padding: 16px;
+            height: 500px;
+        }
+
+        .bloco-1 {
+            background-color: rgb(216, 56, 56);
+            padding: 20px;
+        }
+
+        .bloco-2 {
+            background-color: rgb(182, 182, 48);
+            padding: 20px;
+        }
+
+        .bloco-3 {
+            padding: 20px;
+            background-color: rgb(43, 43, 161);
+        }
+
+        h1,
+        h2 {
+            text-align: center;
+        }
+
+        h2 {
+            color: rgb(83, 83, 83);
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1> 1° Propriedadeflex-direction</h1>
+    <h2>flex-direction: row;</h2>
+    <main class="container" style="flex-direction: row;">
+        <div class="bloco-1">1</div>
+        <div class="bloco-2">2</div>
+        <div class="bloco-3">3</div>
+
+    </main>
+
+    <h2>flex-direction: row-reverse;</h2>
+    <main class="container" style="flex-direction: row-reverse;">
+        <div class="bloco-1">1</div>
+        <div class="bloco-2">2</div>
+        <div class="bloco-3">3</div>
+
+    </main>
+    <h2>flex-direction: column;</h2>
+    <main class="container" style="flex-direction: column;">
+        <div class="bloco-1">1</div>
+        <div class="bloco-2">2</div>
+        <div class="bloco-3">3</div>
+
+    </main>
+    <h2>flex-direction: column-reverse;</h2>
+    <main class="container" style="flex-direction: column-reverse;">
+        <div class="bloco-1">1</div>
+        <div class="bloco-2">2</div>
+        <div class="bloco-3">3</div>
+
+    </main>
+
+    <h1>2° Propiedade justify-content</h1>
+
+    <h2>justify-content: flex-start;</h2>
+    <main class="container" style="justify-content: flex-start;">
+        <div class="bloco-1">1</div>
+        <div class="bloco-2">2</div>
+        <div class="bloco-3">3</div>
+
+    </main>
+    <h2>justify-content: flex-end</h2>
+    <main class="container" style="justify-content: flex-end">
+        <div class="bloco-1">1</div>
+        <div class="bloco-2">2</div>
+        <div class="bloco-3">3</div>
+
+    </main>
+    <h2>justify-content: center;</h2>
+    <main class="container" style="justify-content: center;">
+        <div class="bloco-1">1</div>
+        <div class="bloco-2">2</div>
+        <div class="bloco-3">3</div>
+
+    </main>
+    <h2>justify-content: space-between;</h2>
+    <main class="container" style="justify-content: space-between;">
+        <div class="bloco-1">1</div>
+        <div class="bloco-2">2</div>
+        <div class="bloco-3">3</div>
+
+    </main>
+    <h2>justify-content: space-around;</h2>
+    <main class="container" style="justify-content: space-around;">
+        <div class="bloco-1">1</div>
+        <div class="bloco-2">2</div>
+        <div class="bloco-3">3</div>
+
+    </main>
+
+    </main>
+    <h1>3° text-align</h1>
+    <h2>align-items: flex-start;</h2>
+    <main class="containe" style="align-items: flex-start;">
+        <div class="bloco-1">1</div>
+        <div class="bloco-2">2</div>
+        <div class="bloco-3">3</div>
+
+    </main>
+    <h2>align-items: flex-end;</h2>
+    <main class="containe" style="align-items: flex-end;">
+        <div class="bloco-1">1</div>
+        <div class="bloco-2">2</div>
+        <div class="bloco-3">3</div>
+
+    </main>
+    <h2>align-items: center;</h2>
+    <main class="containe" style="align-items: center;">
+        <div class="bloco-1">1</div>
+        <div class="bloco-2">2</div>
+        <div class="bloco-3">3</div>
+
+    </main>
+    <h2>align-items: stretch;</h2>
+    <main class="containe" style="align-items: stretch;">
+        <div class="bloco-1">1</div>
+        <div class="bloco-2">2</div>
+        <div class="bloco-3">3</div>
+
+    </main>
+    <h2>align-items: baseline;</h2>
+    <main class="containe" style="align-items: baseline;">
+        <div class="bloco-1" style="font-size:30px;">1</div>
+        <div class="bloco-2" style="font-size: 60px;">2</div>
+        <div class="bloco-3" style="font-size: 90px;">3</div>
+
+    </main>
+    <h1>4° flex-wrap</h1>
+    <h2>flex-wrap: nowrap;</h2>
+    <main class="containe" style="flex-wrap: nowrap;">
+        <div class="bloco-1" style="height: 15px;">1</div>
+        <div class="bloco-2" style="height: 15px;">2</div>
+        <div class="bloco-3" style="height: 15px;">3</div>
+        <div class="bloco-1" style="height: 15px;">1</div>
+        <div class="bloco-2" style="height: 15px;">2</div>
+        <div class="bloco-3" style="height: 15px;">3</div>
+        <div class="bloco-1" style="height: 15px;">1</div>
+        <div class="bloco-2" style="height: 15px;">2</div>
+        <div class="bloco-3" style="height: 15px;">3</div>
+        <div class="bloco-1" style="height: 15px;">1</div>
+        <div class="bloco-2" style="height: 15px;">2</div>
+        <div class="bloco-3" style="height: 15px;">3</div>
+        <div class="bloco-1" style="height: 15px;">1</div>
+        <div class="bloco-2" style="height: 15px;">2</div>
+        <div class="bloco-3" style="height: 15px;">3</div>
+        <div class="bloco-1" style="height: 15px;">1</div>
+        <div class="bloco-2" style="height: 15px;">2</div>
+        <div class="bloco-3" style="height: 15px;">3</div>
+        <div class="bloco-1" style="height: 15px;">1</div>
+        <div class="bloco-2" style="height: 15px;">2</div>
+        <div class="bloco-3" style="height: 15px;">3</div>
+        <div class="bloco-1" style="height: 15px;">1</div>
+        <div class="bloco-2" style="height: 15px;">2</div>
+        <div class="bloco-3" style="height: 15px;">3</div>
+        <div class="bloco-1" style="height: 15px;">1</div>
+        <div class="bloco-2" style="height: 15px;">2</div>
+        <div class="bloco-3" style="height: 15px;">3</div>
+
+    </main>
+    <h2>flex-wrap:wrap;</h2>
+    <main class="containe" style="flex-wrap:wrap;">
+        <div class="bloco-1" style="height: 15px;">1</div>
+        <div class="bloco-2" style="height: 15px;">2</div>
+        <div class="bloco-3" style="height: 15px;">3</div>
+        <div class="bloco-1" style="height: 15px;">1</div>
+        <div class="bloco-2" style="height: 15px;">2</div>
+        <div class="bloco-3" style="height: 15px;">3</div>
+        <div class="bloco-1" style="height: 15px;">1</div>
+        <div class="bloco-2" style="height: 15px;">2</div>
+        <div class="bloco-3" style="height: 15px;">3</div>
+        <div class="bloco-1" style="height: 15px;">1</div>
+        <div class="bloco-2" style="height: 15px;">2</div>
+        <div class="bloco-3" style="height: 15px;">3</div>
+        <div class="bloco-1" style="height: 15px;">1</div>
+        <div class="bloco-2" style="height: 15px;">2</div>
+        <div class="bloco-3" style="height: 15px;">3</div>
+        <div class="bloco-1" style="height: 15px;">1</div>
+        <div class="bloco-2" style="height: 15px;">2</div>
+        <div class="bloco-3" style="height: 15px;">3</div>
+        <div class="bloco-1" style="height: 15px;">1</div>
+        <div class="bloco-2" style="height: 15px;">2</div>
+        <div class="bloco-3" style="height: 15px;">3</div>
+        <div class="bloco-1" style="height: 15px;">1</div>
+        <div class="bloco-2" style="height: 15px;">2</div>
+        <div class="bloco-3" style="height: 15px;">3</div>
+        <div class="bloco-1" style="height: 15px;">1</div>
+        <div class="bloco-2" style="height: 15px;">2</div>
+        <div class="bloco-3" style="height: 15px;">3</div>
+        <div class="bloco-1" style="height: 15px;">1</div>
+        <div class="bloco-2" style="height: 15px;">2</div>
+        <div class="bloco-3" style="height: 15px;">3</div>
+
+    </main>
+    <h2>flex-wrap:wrap-reverse;</h2>
+    <main class="containe" style="flex-wrap:wrap-reverse;">
+        <div class="bloco-1" style="height: 15px;">1</div>
+        <div class="bloco-2" style="height: 15px;">2</div>
+        <div class="bloco-3" style="height: 15px;">3</div>
+        <div class="bloco-1" style="height: 15px;">1</div>
+        <div class="bloco-2" style="height: 15px;">2</div>
+        <div class="bloco-3" style="height: 15px;">3</div>
+        <div class="bloco-1" style="height: 15px;">1</div>
+        <div class="bloco-2" style="height: 15px;">2</div>
+        <div class="bloco-3" style="height: 15px;">3</div>
+        <div class="bloco-1" style="height: 15px;">1</div>
+        <div class="bloco-2" style="height: 15px;">2</div>
+        <div class="bloco-3" style="height: 15px;">3</div>
+        <div class="bloco-1" style="height: 15px;">1</div>
+        <div class="bloco-2" style="height: 15px;">2</div>
+        <div class="bloco-3" style="height: 15px;">3</div>
+        <div class="bloco-1" style="height: 15px;">1</div>
+        <div class="bloco-2" style="height: 15px;">2</div>
+        <div class="bloco-3" style="height: 15px;">3</div>
+        <div class="bloco-1" style="height: 15px;">1</div>
+        <div class="bloco-2" style="height: 15px;">2</div>
+        <div class="bloco-3" style="height: 15px;">3</div>
+        <div class="bloco-1" style="height: 15px;">1</div>
+        <div class="bloco-2" style="height: 15px;">2</div>
+        <div class="bloco-3" style="height: 15px;">3</div>
+        <div class="bloco-1" style="height: 15px;">1</div>
+        <div class="bloco-2" style="height: 15px;">2</div>
+        <div class="bloco-3" style="height: 15px;">3</div>
+        <div class="bloco-1" style="height: 15px;">1</div>
+        <div class="bloco-2" style="height: 15px;">2</div>
+        <div class="bloco-3" style="height: 15px;">3</div>
+
+    </main>
+    <h2>flex-flow: row wrap;</h2>
+    <main class="containe" style="flex-flow: row wrap;">
+        <div class="bloco-1" style="height: 15px;">1</div>
+        <div class="bloco-2" style="height: 15px;">2</div>
+        <div class="bloco-3" style="height: 15px;">3</div>
+        <div class="bloco-1" style="height: 15px;">1</div>
+        <div class="bloco-2" style="height: 15px;">2</div>
+        <div class="bloco-3" style="height: 15px;">3</div>
+        <div class="bloco-1" style="height: 15px;">1</div>
+        <div class="bloco-2" style="height: 15px;">2</div>
+        <div class="bloco-3" style="height: 15px;">3</div>
+        <div class="bloco-1" style="height: 15px;">1</div>
+        <div class="bloco-2" style="height: 15px;">2</div>
+        <div class="bloco-3" style="height: 15px;">3</div>
+        <div class="bloco-1" style="height: 15px;">1</div>
+        <div class="bloco-2" style="height: 15px;">2</div>
+        <div class="bloco-3" style="height: 15px;">3</div>
+        <div class="bloco-1" style="height: 15px;">1</div>
+        <div class="bloco-2" style="height: 15px;">2</div>
+        <div class="bloco-3" style="height: 15px;">3</div>
+        <div class="bloco-1" style="height: 15px;">1</div>
+        <div class="bloco-2" style="height: 15px;">2</div>
+        <div class="bloco-3" style="height: 15px;">3</div>
+        <div class="bloco-1" style="height: 15px;">1</div>
+        <div class="bloco-2" style="height: 15px;">2</div>
+        <div class="bloco-3" style="height: 15px;">3</div>
+        <div class="bloco-1" style="height: 15px;">1</div>
+        <div class="bloco-2" style="height: 15px;">2</div>
+        <div class="bloco-3" style="height: 15px;">3</div>
+        <div class="bloco-1" style="height: 15px;">1</div>
+        <div class="bloco-2" style="height: 15px;">2</div>
+        <div class="bloco-3" style="height: 15px;">3</div>
+
+    </main>
+
+    <h1>7° order</h1>
+    <h2>order: 0; ou 1 ou 2</h2>
+    <main class="contain" style="gap:20px;">
+        <div class="bloco-1" style="order: 2;">1</div>
+        <div class="bloco-2" style="order: 0;">2</div>
+        <div class="bloco-3" style="order: 0;">3</div>
+        <div class="bloco-1" style="height: 15px;">1</div>
+        <div class="bloco-2" style="height: 15px;">2</div>
+        <div class="bloco-3" style="height: 15px;">3</div>
+        <div class="bloco-1" style="height: 15px;">1</div>
+        <div class="bloco-2" style="height: 15px;">2</div>
+        <div class="bloco-3" style="height: 15px;">3</div>
+        <div class="bloco-1" style="height: 15px;">1</div>
+        <div class="bloco-2" style="height: 15px;">2</div>
+        <div class="bloco-3" style="height: 15px;">3</div>
+        <div class="bloco-1" style="height: 15px;">1</div>
+        <div class="bloco-2" style="height: 15px;">2</div>
+        <div class="bloco-3" style="height: 15px;">3</div>
+        <div class="bloco-1" style="height: 15px;">1</div>
+        <div class="bloco-2" style="height: 15px;">2</div>
+        <div class="bloco-3" style="height: 15px;">3</div>
+        <div class="bloco-1" style="height: 15px;">1</div>
+        <div class="bloco-2" style="height: 15px;">2</div>
+        <div class="bloco-3" style="height: 15px;">3</div>
+        <div class="bloco-1" style="height: 15px;">1</div>
+        <div class="bloco-2" style="height: 15px;">2</div>
+        <div class="bloco-3" style="height: 15px;">3</div>
+        <div class="bloco-1" style="height: 15px;">1</div>
+        <div class="bloco-2" style="height: 15px;">2</div>
+        <div class="bloco-3" style="height: 15px;">3</div>
+        <div class="bloco-1" style="height: 15px;">1</div>
+        <div class="bloco-2" style="height: 15px;">2</div>
+        <div class="bloco-3" style="height: 15px;">3</div>
+
+    </main>
+    <h1>8° flex-grow</h1>
+    <h2>flex-grow:1; ou 2 ou 3</h2>
+    <main class="contain" style="gap:20px;">
+        <div class="bloco-1" style="height: 15px;">1</div>
+        <div class="bloco-2" style="height: 15px;">2</div>
+        <div class="bloco-3" style="height: 15px; flex-grow: 1;">3</div>
+        <div class="bloco-1" style="height: 15px;">1</div>
+        <div class="bloco-2" style="height: 15px;">2</div>
+        <div class="bloco-3" style="height: 15px; flex-grow: 1;">3</div>
+        <div class="bloco-1" style="height: 15px;">1</div>
+        <div class="bloco-2" style="height: 15px;">2</div>
+        <div class="bloco-3" style="height: 15px; flex-grow: 1;">3</div>
+        <div class="bloco-1" style="height: 15px;">1</div>
+        <div class="bloco-2" style="height: 15px;">2</div>
+        <div class="bloco-3" style="height: 15px; flex-grow: 1;">3</div>
+        <div class="bloco-1" style="height: 15px;">1</div>
+        <div class="bloco-2" style="height: 15px;">2</div>
+        <div class="bloco-3" style="height: 15px; flex-grow: 1;">3</div>
+        <div class="bloco-1" style="height: 15px;">1</div>
+        <div class="bloco-2" style="height: 15px;">2</div>
+        <div class="bloco-3" style="height: 15px; flex-grow: 1;">3</div>
+        <div class="bloco-1" style="height: 15px;">1</div>
+        <div class="bloco-2" style="height: 15px;">2</div>
+        <div class="bloco-3" style="height: 15px; flex-grow: 1;">3</div>
+        <div class="bloco-1" style="height: 15px;">1</div>
+        <div class="bloco-2" style="height: 15px;">2</div>
+        <div class="bloco-3" style="height: 15px; flex-grow: 1;">3</div>
+        <div class="bloco-1" style="height: 15px;">1</div>
+        <div class="bloco-2" style="height: 15px;">2</div>
+        <div class="bloco-3" style="height: 15px; flex-grow: 1;">3</div>
+        <div class="bloco-1" style="height: 15px;">1</div>
+        <div class="bloco-2" style="height: 15px;">2</div>
+        <div class="bloco-3" style="height: 15px; flex-grow: 1;">3</div>
+
+    </main>
+    <div style="text-decoration: none;text-align: center; padding: 100px; background-color: orange;color: black;">
+        <a href="https://www.youtube.com/watch?v=KbjLtEgmZ_E&t=1003s">AuLAS 1</a>
+        <a href="https://www.youtube.com/watch?v=hjz6ezV9_uc">AULAS 2</a>
+    </div>
+
+</body>
+
+</html>
