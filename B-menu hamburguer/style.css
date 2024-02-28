@@ -36,11 +36,11 @@ menu{
     display:none;
 }
 
-menu > ul {
+menu > ul > li > a{
     list-style: none;
 }
 
-menu > ul > li {
+menu > ul > li a{
     display: block;
     padding: 10px;
     text-decoration: none;

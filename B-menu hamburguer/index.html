@@ -18,23 +18,128 @@
             </span>
         <menu id="itens">
             <ul>
-                <li href="#">opção 1</li>
-                <li href="#">opção 2</li>
-                <li href="#">opção 3</li>
-                <li href="#">opção 4</li>
-                <li href="#">opção 5</li>
+                <li>
+                    <a href="">OPÇÃO 1</a>
+                </li>
+                <li>
+                    <a href="">OPÇÃO 2</a>
+                </li>
+                <li>
+                    <a href="">OPÇÃO 3</a>
+                </li>
+                <li>
+                    <a href="">OPÇÃO 4</a>
+                </li>
+                
             </ul>
         </menu>
     </header>
-    <main>
-        <article>
-            <h2>Testando media Queries</h2>
-            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ratione error unde veritatis, laboriosam facere voluptatem, dignissimos laborum voluptatum amet fuga deserunt in consequatur explicabo. Sapiente, at facilis? Hic, quasi harum!</p>
-            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ratione error unde veritatis, laboriosam facere voluptatem, dignissimos laborum voluptatum amet fuga deserunt in consequatur explicabo. Sapiente, at facilis? Hic, quasi harum!</p>
-            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ratione error unde veritatis, laboriosam facere voluptatem, dignissimos laborum voluptatum amet fuga deserunt in consequatur explicabo. Sapiente, at facilis? Hic, quasi harum!</p>
-            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ratione error unde veritatis, laboriosam facere voluptatem, dignissimos laborum voluptatum amet fuga deserunt in consequatur explicabo. Sapiente, at facilis? Hic, quasi harum!</p>
-        </article>
-    </main>
+   <style>
+  
+  @charset "UTF-8";
+
+*{
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0px;
+    padding: 0px;
+}
+
+body,html{
+    background-color: lightgrey;
+}
+header{
+    background-color: gray;
+    padding: 10px;
+    text-align: center;
+}
+
+header > h1{
+    padding: 10px;
+    text-align: center;
+}
+span.material-symbols-outlined{
+    background-color: rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
+    display: block;
+    text-align: center;
+    padding: 10px;
+    cursor: pointer;
+}
+span.material-symbols-outlined:hover{
+    background-color:white;
+    color: black;
+
+}
+menu{
+    display:none;
+}
+
+menu > ul > li > a{
+    list-style: none;
+}
+
+menu > ul > li a{
+    display: block;
+    padding: 10px;
+    text-decoration: none;
+    background-color: rgb(49, 48, 48);
+    color: white;
+    text-align: center;
+    border-top: 2px solid rgb(190, 188, 188);
+    cursor: pointer;
+}
+menu > ul > li:hover {
+    background-color: gray;
+
+}
+main {
+    width: 90vh;
+    background-color: white;
+    margin: auto;
+    margin-top: 10px;
+    padding: 10px;
+    border-radius: 10px;
+}
+article > h2 {
+    padding-bottom: 20px;
+}
+
+article > p {
+    text-align: justify;
+    margin-bottom: 10px;
+    text-indent: 20px;
+}
+
+
+
+/* Typical Device Breakpoints
+-----------------------------
+Pequenas telas: até 600px
+Celular: de 600px até 768px
+Tablet: 768px até 992px
+Desktop: 922px até 1200px
+Grandes telas: acima de 1200px
+*/
+
+@media screen and (min-width: 768px) {
+
+    span.material-symbols-outlined{
+        display: none;
+    }
+
+    menu {
+        display: block;
+    }
+
+    menu > ul > li {
+        display: inline-block;
+    }
+
+    main {
+        width: 768px;
+    }
+}
+   </style>
     <script>
 
         function mudouTamanho() {
@@ -52,6 +157,5 @@
            }
         }
     </script>
-    
 </body>
 </html>
